@@ -1,0 +1,82 @@
+body {
+    /*
+    bg image source: https://unsplash.com/photos/aerial-photography-of-mountains-k6GpdsPJSZw
+    */
+    background-image: url("/images/index_bg_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*(fixed bg so it does not move and covers the full page)*/
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    background-color: #2b2d2f;
+}
+
+/*navbar inspiration from w3schools (modified)*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #c9d2e3;
+}
+
+ul li {
+    float: right;
+}
+
+ul li a {
+    display: block;
+    color: #232d3a;
+    text-align: center;
+    padding: 14px 16px;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-decoration: none;
+    font-size: 200%;
+}
+
+ul li a:hover {
+    background-color: #536887;
+}
+
+#welc {
+    text-align: center;
+    color: #2b333f;
+}
+
+h1 {
+    font-size: 400%;
+}
+
+h2 {
+    font-size: 200%
+}
+
+.introText {
+    font-size: 130%
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(69, 90, 120, 0.3);
+    color: white;
+    text-align: center;
+
+}
+
+button {
+    background-color: #b8c1d2;
+    width: 140px;
+    height: 40px;
+    border-radius: 15px;
+    box-shadow: 0 9px, #45576b;
+}
+
+button:hover {
+    background-color: rgb(69, 90, 120, 0.3);
+
+}
