@@ -56,7 +56,7 @@ h2 {
 .introText {
     font-size: 130%
 }
-
+/*footer inspiration from w3schools (modified)*/
 footer {
     position: fixed;
     left: 0;
@@ -73,6 +73,7 @@ button {
     width: 140px;
     height: 40px;
     border-radius: 15px;
+    /*shadow not working (have to fix)*/
     box-shadow: 0 9px, #45576b;
 }
 
