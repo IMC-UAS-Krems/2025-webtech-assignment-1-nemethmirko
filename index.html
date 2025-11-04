@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/globalcss/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Welcome</title>
 </head>
 
-<body>
+<body id="indexBody">
     <nav>
         <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="cv.html">CV</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+
         </ul>
     </nav>
     <article>
@@ -24,7 +26,7 @@
             <p class="introText">I am currently a Bachelor Informatics student at the IMC Krems</p>
             <p>If you want to know more click on the button below!</p>
 
-            <button onclick="location.href='about.html'">About me</button>
+            <a href="about.html" id="aboutMeLink">About me</a>
         </div>
     </article>
     <footer>
