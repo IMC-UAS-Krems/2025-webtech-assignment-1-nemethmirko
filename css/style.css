@@ -1,3 +1,19 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /*main content fills all the space*/
+}
+
 #indexBody {
     /*
     bg image source: https://unsplash.com/photos/aerial-photography-of-mountains-k6GpdsPJSZw
@@ -10,7 +26,7 @@
     margin: 0;
     padding: 0;
     background-color: #2b2d2f;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .otherBody {
@@ -20,6 +36,7 @@
     margin: 0;
     padding: 0;
     background-color: #b8c1d2;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*navbar inspiration from w3schools (modified)*/
@@ -73,13 +90,12 @@ h2 {
 
 /*footer inspiration from w3schools (modified)*/
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
     background-color: rgb(69, 90, 120, 0.3);
     color: white;
     text-align: center;
+    padding: 10px 0;
 
 }
 
@@ -120,23 +136,26 @@ textarea {
     height: 30%;
 }
 
-input[type=text],[type=email], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+input[type=text],
+[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
-#contactContainer{
-    margin-left: 30%;
-    margin-right: 30%;
+#contactContainer {
+    margin-left: 40%;
+    margin-right: 40%;
 }
 
-#submitButton{
+#submitButton {
     border: 1px solid black;
     background-color: #ffff;
     width: 140px;
@@ -147,8 +166,10 @@ input[type=text],[type=email], select, textarea {
     color: black;
     display: block;
     margin: auto;
+    margin-top: 20px;
 
 }
+
 
 #submitButton:hover {
     background-color: #536887;
@@ -156,15 +177,59 @@ input[type=text],[type=email], select, textarea {
 
 #pictureContainer {
     display: flex;
-    justify-content: center; /*centered the rows*/
+    justify-content: center;
+    /*centered the rows*/
     align-items: center;
-    gap: 20px; /*space between pictures(divs)*/
-    flex-wrap: wrap; /*wrap pictures on smaller screens*/
+    gap: 20px;
+    /*space between pictures(divs)*/
+    flex-wrap: wrap;
+    /*wrap pictures on smaller screens*/
     padding: 20px;
 }
 
 .pictureDiv img {
-    width: 250px; /*fixed width for all of the pictures so they all look more or less the same*/
+    width: 250px;
+    /*fixed width for all of the pictures so they all look more or less the same*/
     height: auto;
     border-radius: 8px;
 }
+
+.textContainerDiv {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 20px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+#cvContainer{
+    font-size: 20px;
+    margin: 2% 25% 0% 25%;
+}
+
+#cvHeadContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+table{
+    width: 100%;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 5px 0px 5px 0px;
+}
+
+.tHeaders{
+    background-color: white;
+    font-weight: bold;
+}
+
